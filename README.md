@@ -5,7 +5,7 @@ Ansible role: Terraria Server
 
 Install your Terraira server in your Ubuntu server
 This palybook automatically installs the server, configures the firewall, and integrates management with systemd.<br>
-The server version is 1.3.5.3
+The server version is 1.4.0.1
 
 ## Requirements
 
