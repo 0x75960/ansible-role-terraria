@@ -52,6 +52,6 @@
 
 - name: Start Terraria Server
   service: 
-    name: terraira
+    name: terraria
     enabled: yes 
     status: restarted
