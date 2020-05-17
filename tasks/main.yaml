@@ -14,7 +14,7 @@
 
 - name: Download Terraria Server 1.3.5.3
   get_url:
-    url: "http://terraria.org/server/terraria-server-1353.zip"
+    url: "http://terraria.org/server/terraria-server-1401.zip"
     dest: "/opt"
     mode: 0664
 
@@ -25,11 +25,11 @@
 
 - name: Extract terraria.zip into /opt/terraria
   unarchive:
-    src: "/opt/terraria-server-1353.zip"
+    src: "/opt/terraria-server-1401.zip"
     dest: "/opt/terraria"
 
 - name: delete unused folder 
-  shell: "mv -vn /opt/terraria/1353/* /opt/terraria/ && rm -R -f /opt/1353"
+  shell: "mv -vn /opt/terraria/1401/* /opt/terraria/ && rm -R -f /opt/1401"
 
 - name: Set Permission
   shell: "chown -R root:root /opt/terraria && chmod +x /opt/terraria/Linux/TerrariaServer.bin.x86_64"
